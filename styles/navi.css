@@ -1,0 +1,74 @@
+@charset "utf-8";
+html,body{font-family:Arial,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;}
+body{margin:0;}
+ul{margin:0;padding:0;list-style:none;outline:none;}
+.wrapper a{display:inline-block;margin:0;padding:0;text-decoration:none;outline:none;}
+.wrapper a:link,.wrapper a:visited,.wrapper a:hover,.wrapper a:active{text-decoration:none;outline:none;}
+.wrapper p,.wrapper dl,.wrapper dd{margin:0;}
+
+/*顶部导航*/
+.nav-container{position:fixed;top:0;margin:0;width:100%;height:70px;background:#ee7700;color:#fff;z-index:1000;}
+.nav-container a{font-size:16px;}
+.nav-container .nav-logo{padding:0 0 0 25px;line-height:50px;font-size:0;}
+.nav-container .nav-logo .icon-logo{display:inline-block;width:136px;height:40px;margin-top:10px;background:url(../styles/images/ci-oa-logo.png) 0 0 no-repeat;}
+.nav-container .nav-logo .nav-headline{margin:0 5px;font-size:18px;}
+.nav-container .nav-logo .icon-logo,.nav-container .nav-logo .nav-headline{display:inline-block;vertical-align:middle;}
+.nav-container .navbar-default{font-size:16px;margin:0;background:#ee7700;color:#fff;border:0;}
+.nav-container .navbar-default a{font-size:16px;color:#fff;}
+.nav-container .navbar{height:70px;line-height:70px;}
+.nav-container .navbar-collapse{background:#ee7700;}
+
+/*侧导航*/
+.subnav-container{position:fixed;left:0;top:70px;width:200px;height:100%;font-size:14px;color:#fff;z-index:2;}
+.subnav-container a{display:block;font-size:14px;color:#fff;}
+.subnav-container:after{content:'';position:absolute;top:0;left:0;width:200px;height:100%;background:#45494c;}
+.subnav-container .subnav-main{position:relative;z-index:2;padding-bottom:20px;width:200px;background:#45494c;}
+.subnav-container .subnav-headline{padding-left:25px;height:58px;line-height:58px;font-size:15px;background:#394555;}
+.subnav-container .subnav-title{position:relative;padding:0 25px;height:40px;line-height:40px;font-weight:400;background:#45494c;cursor:pointer;}
+.subnav-container .subnav-title .glyphicon{margin-right:10px;top:4px;}
+/* icon */
+.subnav-container .subnav-title .glyphicon{width:20px;height:20px;display:inline-block;background:url(../styles/images/ci-oa-icon.png) no-repeat;}
+.subnav-container .subnav-item:nth-child(1) .subnav-title .glyphicon{background-position:0 0;}
+.subnav-container .subnav-item:nth-child(2) .subnav-title .glyphicon{background-position:0 -44px;}
+.subnav-container .subnav-item:nth-child(3) .subnav-title .glyphicon{background-position:0 -94px;}
+.subnav-container .subnav-item:nth-child(4) .subnav-title .glyphicon{background-position:0 -144px;}
+.subnav-container .subnav-item:nth-child(5) .subnav-title .glyphicon{background-position:0 -194px;}
+.subnav-container .subnav-item:nth-child(6) .subnav-title .glyphicon{background-position:0 -242px;}
+.subnav-container .subnav-item:nth-child(7) .subnav-title .glyphicon{background-position:0 -294px;}
+.subnav-container .subnav-item:nth-child(8) .subnav-title .glyphicon{background-position:0 -344px;}
+.subnav-container .subnav-item:nth-child(9) .subnav-title .glyphicon{background-position:0 -394px;}
+.subnav-container .subnav-item:nth-child(10) .subnav-title .glyphicon{background-position:0 -444px;}
+.subnav-container .subnav-item:nth-child(11) .subnav-title .glyphicon{background-position:0 -494px;}
+.subnav-container .subnav-item:nth-child(12) .subnav-title .glyphicon{background-position:0 -544px;}
+
+
+.subnav-container .subnav-title .caret{position:absolute;top:50%;right:25px;margin-top:-2px;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all.3s;}
+.subnav-container .checked .subnav-title .caret,.subnav-container .active .subnav-title .caret{-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);-ms-transform:rotate(-90deg);-o-transform:rotate(-90deg);transform:rotate(-90deg);}
+.subnav-container .checked .subnav-title{background:#2e353d;color:#ee7700;border-right:2px solid #ee7700;}
+.subnav-container .subnav-info{display:none;}
+.subnav-container .active .subnav-info{display:block;}
+.subnav-container .subnav-link{padding:0 25px 0 50px;height:40px;line-height:40px;}
+.subnav-container .subnav-link:hover{background:#2f3841;}
+.subnav-container .subnav-text{position:relative;padding-left:18px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.subnav-container .subnav-text:before{content:'';position:absolute;top:50%;left:0;margin-top:-3px;width:6px;height:6px;border-radius:50%;background:#fff;}
+.subnav-container .subnav-link.cur,.subnav-container .subnav-item .cur{background:#288ad6;}
+.subnav-container .subnav-link.cur .subnav-text:before,.subnav-container .subnav-item .cur .subnav-text:before{background:#fff;}
+.subnav-extend-open{width:380px;background:#eaedf1;}
+.subnav-extend-open:before{content:'';position:absolute;top:0;left:200px;width:180px;height:100%;background:#eaedf1;}
+.subnav-container .subnav-extend{position:fixed;top:50px;left:200px;width:180px;height:100%;font-size:12px;color:#0f0f0f;background:#eaedf1;display:none;}
+.subnav-container .subnav-extend.case,.subnav-container .subnav-open .case{display:block;}
+.subnav-container .subnav-extend a{font-size:12px;color:#0f0f0f;}
+.subnav-container .subnav-extend .subnav-subtitle{padding-left:25px;height:58px;line-height:58px;font-size:14px;font-weight:700;color:#000;}
+.subnav-container .subnav-extend .subnav-subtext{padding:0 25px 0 50px;height:40px;line-height:40px;}
+.subnav-container .subnav-extend .subnav-subtext:hover{background:#e2e6eb;}
+.subnav-container .subnav-extend .subnav-subtext.cur,.subnav-container .subnav-extend .cur{background:#fff;}
+
+/*主体内容*/
+.wrapper-container{position:relative;padding-top:50px;border-left:200px solid #45494c;}
+.wrapper-container:after{content:'';display:block;height:0;clear:both;visibility:hidden;}
+.subnav-extend-set{padding-left:180px;}
+.subnav-extend-set:before{content:'';position:absolute;top:0;left:0;width:180px;height:100%;background:#eaedf1;}
+.wrapper-container .wrapper-main{float:left;padding:10px 45px 30px 30px;width:100%;}
+
+/*隐藏顶部导航样式*/
+.nav-hidden{top:0;padding-top:0;}
