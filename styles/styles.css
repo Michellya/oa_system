@@ -31,10 +31,9 @@
 .wrapper .info-box .info-list{margin-left:180px;}
 .wrapper .info-box .info-list .name{color:#444;font-size:20px;font-weight:bold;}
 .wrapper .info-box .info-list .name .egl-name{margin:0 0 0 15px;}
-.wrapper .reward-box{max-height:340px;overflow:hidden;}
-.wrapper .reward-box .reward{margin-top:-22px;margin-bottom:0;overflow:hidden;}
-.wrapper .reward-box .reward li{width:64px;height:92px;float:left;margin:18px 45px 18px 0;background:url(../styles/images/ci-oa-icon.png) no-repeat;background-position:-47px -92px;}
-.wrapper .reward-box .reward li:nth-child(5n){margin-right:0;}
+.wrapper .reward-box{max-height:322px;overflow:hidden;}
+.wrapper .reward-box .reward{margin-top:-22px;margin-left:-25px;margin-bottom:0;overflow:hidden;}
+.wrapper .reward-box .reward li{width:64px;height:92px;float:left;margin:18px 20px 18px;background:url(../styles/images/ci-oa-icon.png) no-repeat;background-position:-47px -92px;}
 .wrapper .broadcast-box{clear:both;}
 /* 蒙层layer */
 .wrapper-layer{display:none;}
